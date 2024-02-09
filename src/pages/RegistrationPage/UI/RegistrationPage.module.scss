@@ -1,0 +1,66 @@
+.RegistrationPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.registrationForm {
+  background: var(--second-bg);
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 40%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+
+  button {
+    width: 75%;
+    height: 15%;
+    border-radius: 10px;
+    background: var(--bg-color);
+    color: var(--primary-color);
+  }
+}
+
+.registrationForm__input {
+  color: #333;
+  line-height: 1.2;
+  font-size: 18px;
+  display: block;
+  width: 75%;
+  background: #f7f7f7;
+  height: 60px;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+}
+
+.registrationForm__username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    width: 75%;
+  }
+}
+
+.registrationForm__password{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    width: 75%;
+  }
+}
+
+

@@ -1,0 +1,45 @@
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginForm__input {
+  color: #333;
+  line-height: 1.2;
+  font-size: 18px;
+  display: block;
+  width: 75%;
+  background: #f7f7f7;
+  height: 60px;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+}
+
+.loginForm__username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    width: 75%;
+  }
+}
+
+.loginForm__password{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  p {
+    width: 75%;
+  }
+}
+
+

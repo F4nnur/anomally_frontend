@@ -1,0 +1,13 @@
+.Navbar {
+  width: 100%;
+  height: var(--navbar-height);
+  border: 0.5px solid #363333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbarLinks {
+  padding: 4px;
+  margin-left: auto;
+}

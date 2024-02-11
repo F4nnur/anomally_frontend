@@ -5,14 +5,23 @@ interface FormProps {
     children?: React.ReactNode;
     title: string;
     buttonTitle: string;
+    onButtonClick: () => void;
 }
 const Form = (props: FormProps) => {
-    const { children, title, buttonTitle } = props;
+    const {
+        children, title, buttonTitle, onButtonClick,
+    } = props;
     return (
         <div className={cls.Form}>
             <p>{title}</p>
             {children}
-            <button type="submit">{buttonTitle}</button>
+            <button
+                type="submit"
+                onClick={onButtonClick}
+            >
+
+                {buttonTitle}
+            </button>
         </div>
     );
 };

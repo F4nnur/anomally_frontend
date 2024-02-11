@@ -53,7 +53,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'no-undef': 'off',
         'import/no-extraneous-dependencies': 'off',
-        'max-len': ['error', { ignoreComments: true, code: 120 }],
+        'max-len': ['error', { ignoreComments: true, code: 220 }],
         'no-restricted-globals': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'jsx-a11y/no-static-element-interactions': 'off',

@@ -61,6 +61,8 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies,
         'no-param-reassign': 'off',
         'typescript-eslint/no-var-requires': 'off',
+        'no-plusplus': 'off',
+        'jsx-a11y/img-redundant-alt': 'off',
 
     },
     globals: {

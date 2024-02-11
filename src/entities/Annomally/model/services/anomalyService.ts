@@ -1,10 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { $api } from '../../../../shared/api/api';
-import { AnomalySchema } from '../type/AnomalySchema';
 
-interface RegisterReturn {
-
-}
 export const anomalyService = createAsyncThunk(
     'anomaly/get',
     async (_, thunkAPI) => {
@@ -14,7 +10,6 @@ export const anomalyService = createAsyncThunk(
             if (!response.data) {
                 throw new Error();
             }
-            console.log(response.data);
             return response.data;
         } catch (e) {
             console.log('error');

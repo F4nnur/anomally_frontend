@@ -1,10 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { $api } from '../../../../shared/api/api';
-import { User } from '../../../../entities/User/model/type/UserSchema';
 
-interface RegisterReturn {
-
-}
 interface RegistrationWithUsernameProps {
     username: string;
     password: string;

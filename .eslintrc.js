@@ -55,6 +55,7 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'max-len': ['error', { ignoreComments: true, code: 220 }],
         'no-restricted-globals': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         'jsx-a11y/no-static-element-interactions': 'off',
         'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks

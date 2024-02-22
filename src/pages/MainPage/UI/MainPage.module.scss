@@ -11,3 +11,32 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.mainPageTittle {
+  margin-bottom: 30px;
+}
+
+.dataBaseInput {
+  width: 25rem;
+}
+
+.dbAndMetrics {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.metricsList {
+  display: flex;
+  width: 100%;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mainPageContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px
+}

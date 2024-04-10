@@ -3,7 +3,7 @@ import cls from './Navbar.module.scss';
 
 const Navbar = () => (
     <div className={cls.Navbar}>
-        navbar
+        LAD
     </div>
 );
 

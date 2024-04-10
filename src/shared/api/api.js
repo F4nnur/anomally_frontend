@@ -10,3 +10,13 @@ export const $api = axios.create({
         Authorization: `Bearer ${ACCESS_TOKEN}`,
     },
 });
+
+const baseAirflowUrl = 'http://localhost:8080/api/v1/';
+
+export const $airflowApi = axios.create({
+    baseURL: baseAirflowUrl,
+    headers: {
+        Authorization: `Basic ${btoa('airflow:airflow')}`,
+        'Content-Type': 'application/json',
+    },
+});

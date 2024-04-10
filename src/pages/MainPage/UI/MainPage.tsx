@@ -6,6 +6,7 @@ import { useAppDispatch } from '../../../shared/lib/hooks/useAppDispatch';
 import { anomalyService } from '../../../entities/Annomally/model/services/anomalyService';
 import { getAnomalyData } from '../../../entities/Annomally/model/selectors/getAnomalyData/getAnomalyData';
 import cls from './MainPage.module.scss';
+import { $airflowApi } from '../../../shared/api/api';
 
 interface Metric {
     metric: string
@@ -34,8 +35,9 @@ const MainPage = () => {
         setMetrics(updatedMetrics);
     };
     const findAnomaly = useCallback(() => {
-        dispatch(anomalyService());
-    }, [dispatch]);
+        // dispatch(anomalyService());
+        $airflowApi.patch('dags/air_test', { is_paused: false });
+    }, []);
 
     return (
         <div className={cls.MainPage}>
@@ -50,18 +52,24 @@ const MainPage = () => {
                     </div>
                     <div className={cls.dbAndMetrics}>
                         <div>
-                            <input className={cls.dataBaseInput} placeholder="Ссылка на базу данныз" />
+                            <input className={cls.dataBaseInput} placeholder="Ссылка на базу данныx" />
                         </div>
                         <div className={cls.metricsList}>
                             {metrics.map((elem, i) => (
                                 <div>
-                                    <input name="metric" value={elem.metric} onChange={(e) => handleChange(e, i)} />
+                                    <input
+                                        pattern="[A-Za-z]+"
+                                        type="text"
+                                        name="metric"
+                                        value={elem.metric}
+                                        onChange={(e) => handleChange(e, i)}
+                                    />
                                 </div>
                             ))}
                             <button type="submit" onClick={handleMetrics}>Добавить метрику</button>
                         </div>
                     </div>
-                    <button type="submit" onClick={findAnomaly}>Найти аномалии</button>
+                    <button className={cls.findAnomaly} type="submit" onClick={findAnomaly}>Найти аномалии</button>
                 </div>
                 {data?.map((elem) => (
                     <div className={cls.content}>

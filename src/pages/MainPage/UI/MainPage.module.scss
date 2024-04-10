@@ -40,3 +40,29 @@
   flex-direction: column;
   gap: 10px
 }
+
+input {
+  width: 200px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #F6F6f6;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.findAnomaly {
+  margin-top: 18px;
+}
